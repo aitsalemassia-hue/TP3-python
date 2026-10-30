@@ -9,7 +9,7 @@ class Developpeur(Employe):
           self.langage=langage
 
      def salaire_total(self):
-          bonus=500 if self.langage=="Python" else 0
+          bonus=500 if self.langage=="Python" else 300
           return self.salaire_base + bonus
      def __str__(self):
           return f"Developpeur - Nom: {self.nom}, Salaire de base: {self.salaire_base} DH, Langage: {self.langage}"
